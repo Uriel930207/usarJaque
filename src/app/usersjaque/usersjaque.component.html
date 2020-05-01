@@ -1,0 +1,151 @@
+<div class="content_users">
+    <div class="head_user">
+        <div class="des_user_head">
+            <p>Usuarios</p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+        </div>
+        <div class="btn_view_users">
+            <div class="btn_add_usr">
+                <button type="button" (click)="mostrarMod()"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/><path d="M0 0h24v24H0z" fill="none"/>
+                        </svg> 
+                        <span> Agregar un nuevo usuario </span> 
+                </button>
+            </div>
+            <div class="btn_vizualiser">
+                <button> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                    <span> Previzualiser</span> 
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="movi_sc">
+        <div class="content_user_desc">
+            <form action="javascript:;">
+                <div class="user_view">
+                    <div class="search_user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                        <input type="search" placeholder="Busqueda" (keyup.enter)="busquedauser(buscar.value)" #buscar>
+                    </div>
+                    <div class="page_fil">
+                        <select name="" id="">
+                        <option value="">4 Pagina</option>
+                        <option value="" selected>8 Pagina</option>
+                        <option value="">12 Pagina</option>
+                    </select>
+                    </div>
+                    <div class="order_by">
+                        <select name="" id="">
+                        <option value="">Ordenar por Fecha</option>
+                        <option value="" selected>Ordenar A - Z</option>
+                        <option value="">Ordenar Z - A</option>
+                    </select>
+                    </div>
+                    <div class="filter_op">
+                        <select name="" id="">
+                        <option value="">Seleciona una opcion</option>
+                        <option value="" selected>Todos</option>
+                        <option value="">Solo 100</option>
+                    </select>
+                    </div>
+                    <div class="type_vizuali">
+                        <div class="list_vi">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 3v18h18V3H3zm8 16H5v-6h6v6zm0-8H5V5h6v6zm8 8h-6v-6h6v6zm0-8h-6V5h6v6z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        </div>
+                        <div class="list_vi active_view">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/><path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="desc_view_for_users">
+            <div class="space"></div>
+            <div class="foto">
+                <span>Foto</span>
+            </div>
+            <div class="name_users">
+                <span>Nombre</span>
+            </div>
+            <div class="app_pat">
+                <span>Appellido Paterno</span>
+            </div>
+            <div class="app_mat">
+                <span>Apellido Materno</span>
+            </div>
+            <div class="correo">
+                <span>Correo</span>
+            </div>
+            <div class="rol">
+                <span>Rol</span>
+            </div>
+            <div class="status">
+                <span>Status</span>
+            </div>
+            <div class="modifi"></div>
+        </div>
+        <div class="item_user" cdkDropList (cdkDropListDropped)="drop($event)">
+            <div class="desc_view_for_users_mo" *ngFor="let personas of users | slice:0:8" cdkDrag>
+                <div class="space">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/>
+                    <path d="M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                </div>
+                <div class="foto">
+                    <span class="dot">
+                    <img src="{{ personas.picture }}" width="42" alt="">
+                </span>
+                </div>
+                <div class="name_users top">
+                    <span>{{ personas.name }}</span>
+                </div>
+                <div class="app_pat top">
+                    <span>{{ personas.fathersLastName }}</span>
+                </div>
+                <div class="app_mat top">
+                    <span>{{ personas.mothersLastName }}</span>
+                </div>
+                <div class="correo top">
+                    <span>{{ personas.email }}</span>
+                </div>
+                <div class="rol top">
+                    <span>{{ personas.roleId  }}</span>
+                </div>
+                <div class="status top">
+                    <label class="switch">
+                    <input type="checkbox" [checked]="personas.active">
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <div class="modifi">
+                    <div class="editar_users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"/>
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                    </svg>
+                    </div>
+                    <div class="trash_user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4z"/><path fill="none" d="M0 0h24v24H0V0z"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black" *ngIf="active==true" (click)="cerrarMod()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+    </div>
+    <app-modaluser *ngIf="active==true"></app-modaluser>
+</div>

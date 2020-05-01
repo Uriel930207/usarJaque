@@ -1,0 +1,470 @@
+.head_user {
+    position: relative;
+    float: left;
+    width: calc(100% - 80px);
+    border: 1px solid #E9E9E9;
+    padding: 40px;
+}
+
+.des_user_head p {
+    font-size: 20px;
+    color: #131B31;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.des_user_head span {
+    font-size: 14px;
+    color: #969696;
+}
+
+.content_users {
+    position: relative;
+    float: left;
+    width: calc(100% - 70px);
+    padding: 35px;
+}
+
+.des_user_head {
+    position: relative;
+    float: left;
+    width: 60%;
+}
+
+.btn_view_users {
+    position: relative;
+    float: right;
+    width: 40%;
+}
+
+.btn_vizualiser {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.btn_vizualiser button {
+    position: relative;
+    float: left;
+    background: transparent;
+    border: 1px solid #FA6A00;
+    padding: 8px 25px;
+    color: #FA6A00;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_vizualiser button:hover {
+    background: #FA6A00;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn_vizualiser button:hover svg {
+    fill: white;
+}
+
+.btn_vizualiser svg {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    float: left;
+    padding: 0px;
+    fill: #FA6A00;
+}
+
+.btn_vizualiser span {
+    position: relative;
+    float: left;
+    width: auto;
+    padding: 9px 19px;
+}
+
+.btn_add_usr {
+    position: relative;
+    float: right;
+}
+
+.btn_add_usr button {
+    position: relative;
+    float: left;
+    background: #FA6A00;
+    border: 1px solid #FA6A00;
+    padding: 8px 25px;
+    color: #FA6A00;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_add_usr svg {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    float: left;
+    padding: 0px;
+    fill: white;
+}
+
+.btn_add_usr span {
+    position: relative;
+    float: left;
+    width: auto;
+    padding: 9px 19px;
+    color: white;
+}
+
+.btn_add_usr button:hover {
+    background: white;
+    border: 1px solid #FA6A00;
+    color: #FA6A00;
+}
+
+.btn_add_usr button:hover svg {
+    fill: #FA6A00;
+}
+
+.btn_add_usr button:hover span {
+    color: #FA6A00;
+}
+
+.content_user_desc {
+    position: relative;
+    float: left;
+    width: 1448px;
+    padding: 15px 40px;
+    margin-top: 30px;
+    border: 1px solid #E9E9E9;
+}
+
+.user_view {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.search_user {
+    position: relative;
+    float: left;
+    width: 55%;
+}
+
+.search_user svg {
+    position: relative;
+    float: left;
+    fill: #FA6A00;
+    z-index: 9;
+    padding: 8px 15px;
+}
+
+.search_user input {
+    position: absolute;
+    float: left;
+    padding: 5px 44px;
+    width: 75%;
+    left: 0;
+    border: 1px solid #E9E9E9;
+    height: 40px;
+    color: #FA6A00;
+    font-family: Circular Std Book;
+    background: #F9F9F9;
+}
+
+.page_fil {
+    position: relative;
+    float: left;
+    width: 12%;
+}
+
+.order_by {
+    position: relative;
+    float: left;
+    width: 15%;
+}
+
+.filter_op {
+    position: relative;
+    float: left;
+    width: 12%;
+}
+
+.page_fil select,
+.order_by select,
+.filter_op select {
+    position: relative;
+    float: left;
+    padding: 5px 44px;
+    width: 95%;
+    left: 0;
+    border: 1px solid #E9E9E9;
+    height: 40px;
+    color: #5F5F5F;
+    font-family: Circular Std Book;
+    background: #F9F9F9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="orange" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/><path fill="none"  d="M0 0h24v24H0V0z"/></svg>');
+}
+
+.type_vizuali {
+    position: relative;
+    float: left;
+    width: 6%;
+}
+
+.list_vi {
+    position: relative;
+    float: right;
+    margin-left: 13px;
+    cursor: pointer;
+    padding: 5px 0px;
+}
+
+.list_vi {
+    fill: #BDBDBD;
+}
+
+.active_view {
+    fill: #FA6A00;
+}
+
+.desc_view_for_users {
+    position: relative;
+    float: left;
+    width: 1448px;
+    border: 1px solid #E9E9E9;
+    border-top: 0px;
+    padding: 30px 40px;
+    color: #494949;
+}
+
+.desc_view_for_users_mo {
+    position: relative;
+    float: left;
+    width: 1448px;
+    border: 1px solid #E9E9E9;
+    border-top: 0px;
+    padding: 30px 40px;
+    color: #5F5F5F;
+    cursor: pointer;
+}
+
+.desc_view_for_users_mo:hover {
+    background: #F9F9F9;
+}
+
+.desc_view_for_users_mo:hover .modifi {
+    opacity: 1;
+}
+
+.space {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 1px;
+}
+
+.foto,
+.name_users,
+.rol,
+.status {
+    position: relative;
+    float: left;
+    width: calc(11% - 30px);
+    padding: 0px 10px;
+}
+
+.app_pat,
+.app_mat,
+.correo {
+    position: relative;
+    float: left;
+    width: calc(17% - 30px);
+    padding: 0px 10px;
+}
+
+.space svg {
+    position: absolute;
+    left: -7px;
+    top: 9px;
+    fill: #E9E9E9;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #E9E9E9;
+    overflow: hidden;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 16px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: -9px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #677FAC;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #677FAC;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.top {
+    top: 10px;
+}
+
+.modifi {
+    position: relative;
+    float: right;
+    opacity: 0;
+}
+
+.editar_users {
+    position: relative;
+    float: left;
+    fill: #FA6A00;
+    padding: 6px 0px;
+    margin-right: 15px;
+}
+
+.trash_user {
+    position: relative;
+    float: left;
+    fill: red;
+    padding: 6px 0px;
+}
+
+.movi_sc {
+    position: relative;
+    float: left;
+    width: 100%;
+    overflow: auto;
+}
+
+.center-con {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+#modal {
+    position: absolute;
+    float: left;
+    width: calc(100% - 0px);
+    height: 100%;
+    background: #000000a1;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.des {
+    margin: 9% auto;
+    width: 625px;
+    background: white;
+    top: 0;
+    height: 700px;
+    position: relative;
+    left: 0%;
+    border: 1px solid #E9E9E9;
+}
+
+.item_user {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.black {
+    position: absolute;
+    float: right;
+    width: 20px;
+    height: 20px;
+    top: 162px;
+    right: 34%;
+    z-index: 99999;
+}
+
+.black svg {
+    transform: rotate(45deg);
+    fill: #FA6A00;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1470px) {
+    .des_user_head {
+        position: relative;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .btn_view_users {
+        position: relative;
+        float: none;
+        width: 605px;
+        margin: auto;
+    }
+}

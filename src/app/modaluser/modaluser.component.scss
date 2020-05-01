@@ -1,0 +1,249 @@
+#modal {
+    position: absolute;
+    float: left;
+    width: calc(100% - 0px);
+    height: 100%;
+    background: #000000a1;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    font-family: Circular Std Book;
+}
+
+.des {
+    margin: 9% auto;
+    width: 625px;
+    background: white;
+    top: 0;
+    height: 700px;
+    position: relative;
+    left: 0%;
+    border: 1px solid #E9E9E9;
+}
+
+.center-con {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.prin_content {
+    position: relative;
+    float: left;
+    width: calc(100% - 100px);
+    text-align: left;
+    padding: 11px 50px;
+}
+
+.foto_perfil {
+    height: 127px;
+    width: 127px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #E9E9E9;
+    overflow: hidden;
+    float: left;
+}
+
+.foto_perfil .img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 34%;
+}
+
+.foto_perfil svg {
+    width: 37px;
+    height: 37px;
+}
+
+.des_picture {
+    position: relative;
+    float: left;
+    width: calc(63% - 10px);
+    padding: 0px 30px;
+}
+
+.foto_head {
+    padding: 10px 0px;
+    color: #121933;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.custom-input-file {
+    background-color: #FA6A00;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+
+.custom-input-file .input-file {
+    border: 10000px solid transparent;
+    cursor: pointer;
+    font-size: 10000px;
+    margin: 0;
+    opacity: 0;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
+}
+
+.title_modal {
+    color: #121933;
+    font-size: 20px;
+}
+
+.foto_head_des {
+    font-size: 14px;
+    color: #5F5F5F;
+}
+
+.col_form {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.col_form input,
+.col_form select {
+    border: 1px solid #E9E9E9;
+    padding: 12px 24px;
+    color: #5F5F5F;
+    width: 75%;
+    background-color: #E9E9E9;
+}
+
+.col_form select {
+    width: 94%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 16px;
+    float: left;
+    top: 10px;
+    left: 7px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: -9px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #677FAC;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #677FAC;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.status {
+    position: relative;
+    float: left;
+    width: 92px;
+    max-width: 100%;
+    text-align: center;
+    padding: 9px 0px;
+}
+
+.col_form_status {
+    position: relative;
+    float: left;
+    width: calc(70% - 149px);
+    padding-bottom: 40px;
+}
+
+.envio_date {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    left: 0;
+    padding: 27px 0px;
+    float: left;
+    border-top: 1px solid #E9E9E9;
+}
+
+.envio_date button {
+    border: none;
+    background: transparent;
+    padding: 12px 35px;
+    color: #FA6A00;
+    font-size: 14px;
+    font-family: Circular Std Book;
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+.envio_date input {
+    border: none;
+    background: #FA6A00;
+    padding: 12px 35px;
+    color: white;
+    font-size: 14px;
+    font-family: Circular Std Book;
+    cursor: pointer;
+}
